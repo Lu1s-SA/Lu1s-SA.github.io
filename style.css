@@ -1,0 +1,209 @@
+:root {
+    --primary: #1a252f;
+    --accent: #2980b9;
+    --light-bg: #f8f9fa;
+    --text: #333;
+    --border: #dee2e6;
+}
+
+body { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    margin: 0; 
+    line-height: 1.6; 
+    background-color: var(--light-bg); 
+    color: var(--text); 
+}
+
+/* 1. CAPÇALERA */
+header { 
+    background: #fdfafa; 
+    padding: 25px 5%; 
+    border-bottom: 4px solid var(--accent); 
+}
+
+/* El contenidor principal */
+.header-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;       
+    padding: 0px 30px;
+}
+
+.logo-bundle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Estil per l'imatge del logo */
+.img-logo {
+    height: 50px;
+    width: auto;
+}
+
+.company-details {
+    text-align: right;
+    font-size: 0.9em;
+}
+
+nav { 
+    background: var(--primary); 
+    padding: 12px 5%; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+nav a { 
+    color: #fff; 
+    text-decoration: none; 
+    margin-right: 20px; 
+    font-size: 14px; 
+    font-weight: 500; 
+}
+
+nav a:hover { 
+    color: var(--accent); 
+}
+
+nav .active { 
+    border-bottom: 2px solid var(--accent); 
+    padding-bottom: 5px; 
+}
+
+/* 2. FORMULARI D'INCIDÈNCIES */
+.main-container { 
+    max-width: 900px; 
+    margin: 40px auto; 
+    background: #fff; 
+    padding: 40px; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05); 
+}
+
+h1 { 
+    margin-top: 0; 
+    color: var(--primary); 
+    font-size: 24px; 
+    border-left: 5px solid var(--accent); 
+    padding-left: 15px; 
+}
+        
+fieldset { 
+    border: 1px solid var(--border); 
+    border-radius: 6px; 
+    padding: 20px; 
+    margin-bottom: 25px; 
+}
+
+legend { 
+    font-weight: bold; 
+    color: var(--accent); 
+    padding: 0 10px; 
+    font-size: 17px; 
+}
+        
+.grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+.full-width { 
+    grid-column: span 2; 
+}
+        
+label { 
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: 600; 
+    font-size: 14px; 
+}
+
+input, select, textarea { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid var(--border); 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+        
+.checkbox-list { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 10px; 
+    background: #fdfdfd; 
+    padding: 10px; 
+    border-radius: 4px; 
+}
+
+.checkbox-item { 
+    display: flex; 
+    align-items: center; 
+    font-size: 14px; 
+}
+
+.checkbox-item input { 
+    width: auto; 
+    margin-right: 10px; 
+}
+
+.btn-submit { 
+    background: var(--accent); 
+    color: white; 
+    border: none; 
+    padding: 16px; 
+    width: 100%; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition: 0.3s; 
+}
+
+.btn-submit:hover { 
+    background: var(--primary); 
+}
+
+/* 3. PEU DE PÀGINA */
+footer { 
+    background: var(--primary); 
+    color: #ecf0f1; 
+    padding: 40px 5% 20px; 
+    margin-top: 50px; 
+}
+
+.footer-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
+    border-bottom: 1px solid #34495e; 
+    padding-bottom: 30px; 
+}
+
+.footer-section h4 { 
+    border-bottom: 2px solid var(--accent); 
+    display: inline-block; 
+    padding-bottom: 5px; 
+    margin-bottom: 15px; 
+}
+        
+.footer-section p, .footer-section a { 
+    font-size: 13px; 
+    color: #bdc3c7; 
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 8px; 
+}
+
+.social-icons { 
+    font-size: 18px; 
+    letter-spacing: 15px; 
+}
+
+.copyright { 
+    text-align: center; 
+    padding-top: 20px; 
+    font-size: 12px; 
+    color: #7f8c8d; 
+}

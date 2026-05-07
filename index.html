@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P4A - Nexuscore</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-area">
+          <img src="logo.png" alt="Logo" class="nexus-logo" style="height: 140px"/>
+        </div>
+
+        <div class="company-details">
+          <b>NIF:</b> B-65432109 | <b>Seu central:</b> Av. Diagonal 123, 08018 Barcelona<br/>
+          <b>Suport:</b> +34 932 99 88 77 | <b>Email:</b> nexuscore@gmail.com
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="#">Inici</a>
+      <a href="#">Tarifes</a>
+      <a href="#">Qui som</a>
+      <a href="#">Contacte</a>
+      <a href="#" class="active">Envia la teva incidència</a>
+    </nav>
+
+    <div class="main-container">
+      <h1>Formulari de recepció d'incidències</h1>
+      <p>
+        Aquest formulari permet als nostres tècnics realitzar un diagnòstic
+        previ abans de la intervenció.
+      </p>
+
+      <form action="#">
+        <fieldset>
+          <legend>1. Dades del client</legend>
+          <div class="grid">
+            <div>
+              <label>Nom i cognoms *</label>
+              <input type="text" required placeholder="Ex: Jordi Prat" />
+            </div>
+            <div>
+              <label>Telèfon *</label>
+              <input type="tel" required placeholder="600 000 000" />
+            </div>
+            <div class="full-width">
+              <label>Correu electrònic *</label>
+              <input type="email" required placeholder="client@empresa.com" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Identificació de l'equip</legend>
+          <div class="grid">
+            <div>
+              <label>Marca i model *</label>
+              <input type="text" required placeholder="Ex: HP ProBook 450 G9" />
+            </div>
+            <div>
+              <label>Tipus d'equip *</label>
+              <select required>
+                <option value="">Selecciona...</option>
+                <option>Sobretaula</option>
+                <option>Portàtil</option>
+                <option>Servidor</option>
+              </select>
+            </div>
+            <div>
+              <label>Sistema operatiu *</label>
+              <select required>
+                <option>Windows 10 / 11</option>
+                <option>Linux (Distribució variada)</option>
+                <option>macOS</option>
+                <option>Altres / No arrenca</option>
+              </select>
+            </div>
+            <div>
+              <label>Urgència *</label>
+              <select required style="background: #fff9f9; border-color: #e74c3c">
+                <option value="baixa">Baixa</option>
+                <option value="mitjana">Mitjana</option>
+                <option value="alta">Alta (Crítica)</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. Components afectats</legend>
+          <div class="checkbox-list">
+            <div class="checkbox-item">
+              <input type="checkbox" /> Disc dur (HDD/SSD)
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" /> Memòria RAM
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" /> Processador (CPU)
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" /> Placa base
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" /> Font d'alimentació
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" /> Pantalla / Monitor
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" /> Teclat / Ratolí
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" /> Targeta gràfica
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>4. Detalls tècnics de l'avaria</legend>
+          <div class="field-group" style="margin-bottom: 15px">
+            <label>Símptomes (Què fa l'equip exactament?) *</label>
+            <textarea rows="4" required placeholder="Ex: L'equip s'apaga sol al cap de 5 minuts de funcionar." ></textarea>
+          </div>
+          <div class="field-group" style="margin-bottom: 15px">
+            <label>Senyals acústics (beeps) o missatges d'error</label>
+            <input type="text" placeholder="Ex: 2 beeps llargs o 'No bootable device found'" />
+          </div>
+          <div class="field-group">
+            <label>Darrera acció realitzada abans de l'error</label>
+            <input type="text" placeholder="Ex: Actualització de Windows o instal·lació d'un programa." />
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">REGISTRAR INCIDÈNCIA</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Horari d'atenció</h4>
+          <p>Dilluns a Divendres: 08:00h - 19:00h</p>
+          <p>Dissabtes: 09:00h - 14:00h</p>
+          <p>Urgències 24h per a clients amb SLA Premium.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <a href="#">Política de privacitat</a>
+          <a href="#">Avís legal</a>
+          <a href="#">Política de cookies</a>
+        </div>
+        <div class="footer-section">
+          <h4>Xarxes socials</h4>
+          <div class="social-icons">
+            <span>🅧</span> <span>🅘</span> <span>🅕</span> <span>🅛</span>
+          </div>
+          <p style="margin-top: 10px">@Nexuscore</p>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Nexuscore - Autor: Luis Serrano</div>
+    </footer>
+  </body>
+</html>
