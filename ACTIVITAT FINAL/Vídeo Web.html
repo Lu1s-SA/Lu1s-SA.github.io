@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeo de l'Espai Web | Luis Serrano</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    
+    <style>
+      /* Estils específics per al reproductor de vídeo */
+      .video-responsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        min-height: 150px;
+      }
+
+      .video-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #1a73e8;
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 16px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .video-btn:hover {
+        background-color: #1557b0;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">LuisSerrano<span>_</span></div>
+        <ul>
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="About Me.html">About Me</a></li>
+          <li><a href="CV i Europass.html">CV / Europass</a></li>
+          <li><a href="Portfoli.html">Portfoli</a></li>
+          <li><a href="Vídeo Web.html" class="active">Vídeo Web</a></li>
+          <li><a href="Contacte.html">Contacte</a></li>
+          <li><a href="Altres.html">Altres</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="video-container">
+      <div class="video-header">
+        <h1>Presentació de <span>l'Espai Web</span></h1>
+      </div>
+
+      <section class="video-player-box">
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 20px; background: #000; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"> 
+          
+          <iframe 
+            src="https://drive.google.com/file/d/1wgIrmM39-5GI_aNoqSP7SUBMLgkNy0zs/preview" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+          </iframe> 
+          
+        </div>
+      </section>
+
+      <div class="video-details-grid">
+        <article class="info-video">
+          <h2>📌 Punts clau tractats:</h2>
+          <ul>
+            <li>- Presentació professional i competència lingüística (English Intro).</li>
+            <li>- Recorregut dinàmic per la interfície i disseny modern adaptatiu.</li>
+            <li>- Explicació tècnica de la integració de pràctiques i gestió de fitxers.</li>
+          </ul>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Luis José Serrano Aldave</p>
+    </footer>
+  </body>
+</html>
